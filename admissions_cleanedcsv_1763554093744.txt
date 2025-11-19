@@ -1,0 +1,58 @@
+It looks like you’re referring to a file named Admissions_Cleaned.csv — probably a cleaned dataset for an admissions-related project.
+If you already have this file and want to load, inspect, or process it, here’s a complete Python example using pandas:
+Pythonimport pandas as pd
+import os
+
+# Path to your CSV file
+file_path = "Admissions_Cleaned.csv"
+
+try:
+    # Check if file exists
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"File not found: {file_path}")
+
+    # Load the CSV into a DataFrame
+    df = pd.read_csv(file_path)
+
+    # Display basic info
+    print("\n--- Dataset Info ---")
+    print(df.info())
+
+    # Show first 5 rows
+    print("\n--- First 5 Rows ---")
+    print(df.head())
+
+    # Check for missing values
+    print("\n--- Missing Values ---")
+    print(df.isnull().sum())
+
+    # Basic statistics for numeric columns
+    print("\n--- Summary Statistics ---")
+    print(df.describe())
+
+except FileNotFoundError as e:
+    print(e)
+except pd.errors.EmptyDataError:
+    print("The CSV file is empty.")
+except pd.errors.ParserError:
+    print("Error parsing the CSV file. Please check its format.")
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+
+What this script does:
+
+Validates file existence before loading.
+Reads the CSV into a pandas DataFrame.
+Prints:
+
+Dataset structure (info()).
+First 5 rows (head()).
+Missing value counts.
+Summary statistics for numeric columns.
+
+
+Handles common errors like missing file, empty file, or parsing issues.
+
+
+If you don’t have the file yet, I can help you create a sample Admissions_Cleaned.csv with realistic columns (e.g., StudentID, Name, GPA, TestScore, AdmissionStatus) so you can test your code.
+Do you want me to generate a sample admissions dataset for you?
