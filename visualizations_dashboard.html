@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions Data Visualizations Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .viz-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .viz-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .viz-container h2 {
+            margin-top: 0;
+            color: #555;
+        }
+        .download-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .download-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admissions Data Visualizations Dashboard</h1>
+    <div class="dashboard">
+        <div class="viz-container">
+            <h2>Length of Stay Days Histogram</h2>
+            <img src="length_of_stay_days_histogram.png" alt="Length of Stay Days Histogram">
+            <a href="length_of_stay_days_histogram.png" download class="download-link">Download Image</a>
+        </div>
+        <div class="viz-container">
+            <h2>Program Duration Histogram</h2>
+            <img src="program_duration_histogram.png" alt="Program Duration Histogram">
+            <a href="program_duration_histogram.png" download class="download-link">Download Image</a>
+        </div>
+        <div class="viz-container">
+            <h2>Admissions by Year</h2>
+            <img src="admissions_by_year.png" alt="Admissions by Year">
+            <a href="admissions_by_year.png" download class="download-link">Download Image</a>
+        </div>
+        <div class="viz-container">
+            <h2>Admissions by Month</h2>
+            <img src="admissions_by_month.png" alt="Admissions by Month">
+            <a href="admissions_by_month.png" download class="download-link">Download Image</a>
+        </div>
+        <div class="viz-container">
+            <h2>Admissions by Gender</h2>
+            <img src="admissions_by_gender.png" alt="Admissions by Gender">
+            <a href="admissions_by_gender.png" download class="download-link">Download Image</a>
+        </div>
+        <div class="viz-container">
+            <h2>Admissions by Ethnicity</h2>
+            <img src="admissions_by_ethnicity.png" alt="Admissions by Ethnicity">
+            <a href="admissions_by_ethnicity.png" download class="download-link">Download Image</a>
+        </div>
+        <div class="viz-container">
+            <h2>Education Level Pie Chart</h2>
+            <img src="education_level_pie_chart.png" alt="Education Level Pie Chart">
+            <a href="education_level_pie_chart.png" download class="download-link">Download Image</a>
+        </div>
+        <div class="viz-container">
+            <h2>Ethnicity Pie Chart</h2>
+            <img src="ethnicity_pie_chart.png" alt="Ethnicity Pie Chart">
+            <a href="ethnicity_pie_chart.png" download class="download-link">Download Image</a>
+        </div>
+        <div class="viz-container">
+            <h2>Referral Source Pie Chart</h2>
+            <img src="referral_source_pie_chart.png" alt="Referral Source Pie Chart">
+            <a href="referral_source_pie_chart.png" download class="download-link">Download Image</a>
+        </div>
+        <div class="viz-container">
+            <h2>Correlation Heatmap</h2>
+            <img src="correlation_heatmap.png" alt="Correlation Heatmap">
+            <a href="correlation_heatmap.png" download class="download-link">Download Image</a>
+        </div>
+    </div>
+</body>
+</html>
